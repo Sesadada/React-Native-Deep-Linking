@@ -2,7 +2,7 @@
   "expo": {
     "name": "deep-linking",
     "slug": "deep-linking",
-    "scheme": "deep-linking-app",
+    "scheme": "deeplinking",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,16 +17,23 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sesadada.deeplinking"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.sesadada.deeplinking"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "aa5babcb-5620-4c41-b1e0-9a5d12e95831"
+      }
     }
   }
 }
